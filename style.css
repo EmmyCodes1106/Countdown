@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --var-white: hsl(0, 0%, 100%);
+  --var-dark-saturated-blue: hsl(236, 21%, 26%);
+  --var-very-dark-blue: hsl(235, 16%, 14%);
+  --var-mostly-black-blue: hsl(234, 17%, 12%);
+  --var-grayish-blue: hsl(237, 18%, 59%);
+  --var-soft-red: hsl(345, 95%, 68%);
+}
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Red Hat Text', sans-serif;
+  background-color: var(--var-very-dark-blue);
+  color: var(--var-white);
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  flex-direction: column;
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+  overflow: hidden;
+}
+.countdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  font-family: 'Red Hat Text', sans-serif;
+
+  height: 100%;
+  max-width: 100%;
+}
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  position: relative;
+}
+.time > div .top {
+  background-color: var(--var-dark-saturated-blue);
+  width: 100px;
+  height: 55px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  border-bottom: 0.1px solid black;
+}
+.time > div .bottom {
+  background-color: var(--var-dark-saturated-blue);
+  width: 100px;
+  height: 55px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 10px 3px -2px var(--var-mostly-black-blue);
+}
+.time > div h4 {
+  padding: 15px;
+  color: var(--var-grayish-blue);
+  text-transform: uppercase;
+}
+.time > div h2 {
+  position: absolute;
+  z-index: 1000;
+  font-size: 60px;
+  color: var(--var-soft-red);
+  text-align: center;
+  margin-left: 3%;
+  margin-top: 3%;
+  font-weight: 900;
+  font-family: 'Red Hat Text', sans-serif;
+}
+.back {
+  position: absolute;
+}
+h1 {
+  text-transform: uppercase;
+  margin: 50px 10px;
+  font-size: 28px;
+  letter-spacing: 5px;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Red Hat Text', sans-serif;
+}
+.footer {
+  position: absolute;
+  bottom: -10px;
+  margin: auto;
+  min-width: 1440px;
+  max-width: 1440px;
+  overflow: hidden;
+  min-height: 100px;
+}
+.footer .pattern {
+  height: 100%;
+  min-height: 100%;
+}
+.footer .pattern img {
+  max-height: 15vh;
+  width: 100%;
+}
+.footer .social {
+  position: absolute;
+  bottom: 70px;
+  left: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  z-index: 100;
+  background: transparent;
+  max-height: 10vw;
+  bottom: 40px;
+}
+.footer .social img:hover {
+  background-color: var(--var-soft-red);
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .countdown {
+    max-width: 70%;
+  }
+  .countdown h1 {
+    font-size: 20px;
+  }
+  .time {
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+    padding-left: 250px;
+  }
+}
