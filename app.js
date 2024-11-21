@@ -1,5 +1,5 @@
 // Set the target date and time
-const targetDate = new Date("November 21, 2024 14:05:00").getTime();
+const targetDate = new Date("Decrmber 25, 2024 14:05:00").getTime();
 
 // Get HTML elements for countdown updates
 const daysElement = document.getElementById("days");
@@ -27,7 +27,7 @@ function updateCountdown() {
     } else {
         // If countdown is over
         clearInterval(interval);
-        document.querySelector(".countdown").innerHTML = "<h2> The Countdown is Over! <br >We're live now!🚩</h2>";
+        document.querySelector(".countdown").innerHTML = "<h2> The Countdown is Over! <br >It's Christmas 2024✨✨🎄</h2>";
     }
 }
 
