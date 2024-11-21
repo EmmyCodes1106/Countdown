@@ -1,5 +1,5 @@
 // Set the target date and time
-const targetDate = new Date("Decrmber 25, 2024 14:05:00").getTime();
+const targetDate = new Date("Decrmber 25, 2024 00:00:00").getTime();
 
 // Get HTML elements for countdown updates
 const daysElement = document.getElementById("days");
