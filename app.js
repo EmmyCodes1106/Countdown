@@ -1,5 +1,5 @@
 // Set the target date and time
-const targetDate = new Date("January 1, 2025 00:00:00").getTime();
+const targetDate = new Date("January 1, 2026 00:00:00").getTime();
 
 // Get HTML elements for countdown updates
 const daysElement = document.getElementById("days");
@@ -27,7 +27,7 @@ function updateCountdown() {
     } else {
         // If countdown is over
         clearInterval(interval);
-        document.querySelector(".countdown").innerHTML = "<h2> The Countdown is Over! <br >Welcome To 2025✨✨🎄</h2>";
+        document.querySelector(".countdown").innerHTML = "<h2> The Countdown is Over! <br >Welcome To 2026✨✨🎄</h2>";
     }
 }
 
